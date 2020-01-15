@@ -1,23 +1,53 @@
 {
-  "name": "xmrig",
-  "version": "3.0.0",
-  "description": "RandomX, CryptoNight and Argon2 miner",
-  "main": "index.js",
-  "directories": {
-    "doc": "doc"
-  },
-  "scripts": {
-    "build": "node scripts/generate_cl.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xmrig/xmrig.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "GPLv3",
-  "bugs": {
-    "url": "https://github.com/xmrig/xmrig/issues"
-  },
-  "homepage": "https://github.com/xmrig/xmrig#readme"
+    "api": {
+        "id": null,
+        "worker-id": null
+    },
+    "http": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": null,
+        "access-token": null,
+        "restricted": true
+    },
+    "autosave": true,
+    "background": false,
+    "colors": true,
+    "randomx": {
+        "init": -1
+    },
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "hw-aes": null,
+        "priority": null,
+        "memory-pool": false,
+        "asm": true,
+        "cn": [-1],
+        "rx": [-1]
+    },
+    "cuda": {
+        "enabled": false,
+        "loader": null
+    },
+    "donate-level": 1,
+    "donate-over-proxy": 1,
+    "log-file": null,
+    "pools": [
+        {
+            "coin": "monero",
+            "url": "xmrpool.eu:5555",
+            "user": "48bweHFyLm4f4PB22y7KVy8bt9jJsn4mmRCgNTSG1ZVvbcGL64xwniibo5Sjy1Xh25Cyj8fHdgj4UVfjT3XD4xxWPAGYy5f",
+            "pass": "x",
+            "rig-id": "test",
+            "keepalive": true,
+            "enabled": true
+        }
+    ],
+    "print-time": 1800,
+    "retries": 1,
+    "retry-pause": 5,
+    "syslog": false,
+    "user-agent": null,
+    "watch": true
 }
